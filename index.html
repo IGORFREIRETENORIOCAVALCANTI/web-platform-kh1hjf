@@ -7,30 +7,58 @@
   </head>
   <body>
     <h1>Contador incrementado</h1>
+    <div onclick=clica(); style="cursor: pointer;"class="div-1">
 
-    <div class="div-1">
-    <script>
+      <script>
       var cliques = 0;
-      function clica() {
-          cliques += 1;
-          document.getElementById("cliques").innerHTML = cliques;
-      };
-      function zera(){
-        cliques =0;
-        document.getElementById("cliques").innerHTML = cliques;
-      }
-      </script>
-      <button type="button" onclick="clica()">Me clica :)</button>
-      <p onclick="clica()">Psiu... pode me clicar tb :)</p>
-      <p>Cliques: <a id="cliques">0</a></p>
+function clica() {
+    cliques += 1;
+    document.getElementById("cliques").innerHTML = cliques;
+};
+function zera(){
+  cliques = -1;
+  document.getElementById("cliques").innerHTML = cliques;
+}
+</script>
+      <p>Psiu... me clica :)
+      </p>
 
-    <form>
-    <button type="button" onclick="zera()">Zerar contador</button>
-
-    </form>
-
+      <p>Cliques: 
+        <a id="cliques">0</a>
+      </p>
+      
+      <button type="button" onclick="zera()">Zerar contador
+      </button>
   </div>
-    <a href="/me.html">Easter egg</a>
+
+    <a href="/me.html">Easter egg
+    </a>
+    
+    <div onclick=clica2(); style="cursor: pointer;"class="div-2">
+
+    <script>
+    var cliques2 = 0;
+function clica2() {
+  cliques2 += 1;
+  document.getElementById("cliques2").innerHTML = cliques2;
+};
+function zera2(){
+cliques2 = -1;
+document.getElementById("cliques2").innerHTML = cliques2;
+}
+</script>
+    <p>Me clica também :)
+    </p>
+
+    <p>Cliques: 
+      <a id="cliques2">0</a>
+    </p>
+    
+    <button type="button" onclick="zera2()">Zerar contador
+    </button>
+</div>
+
+
     <script>
     document.body.style.backgroundColor = "#E0CBA8";
   </script>
