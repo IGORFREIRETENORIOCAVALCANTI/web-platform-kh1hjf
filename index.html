@@ -1,0 +1,38 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Contador incrementado</h1>
+
+    <div class="div-1">
+    <script>
+      var cliques = 0;
+      function clica() {
+          cliques += 1;
+          document.getElementById("cliques").innerHTML = cliques;
+      };
+      function zera(){
+        cliques =0;
+        document.getElementById("cliques").innerHTML = cliques;
+      }
+      </script>
+      <button type="button" onclick="clica()">Me clica :)</button>
+      <p onclick="clica()">Psiu... pode me clicar tb :)</p>
+      <p>Cliques: <a id="cliques">0</a></p>
+
+    <form>
+    <button type="button" onclick="zera()">Zerar contador</button>
+
+    </form>
+
+  </div>
+    <a href="/me.html">Easter egg</a>
+    <script>
+    document.body.style.backgroundColor = "#E0CBA8";
+  </script>
+  </body>
+</html>
